@@ -8,6 +8,6 @@ RUN mkdir -p /var/www/html
 WORKDIR /var/www/html
 
 COPY nginx.conf /etc/nginx/conf.d/default.conf
-COPY ["server.cer", "server.key", "/var/www/html/"]
+COPY ["index.html", "server.cer", "server.key", "/var/www/html/"]
 
 
